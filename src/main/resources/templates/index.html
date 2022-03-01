@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<div>
+    <div th:each="ca : ${candleList}" class="squirrel-entry">
+        <h3 th:text="${ca.name}">NAME</h3>
+        <p th:text="${ca.description}">DESCRIPTION</p>
+        <p th:text="${ca.price}">PRICE</p>
+
+        <br/>
+        <button th:onclick="">Buy IT</button>
+    </div>
+</div>
+
+</body>
+</html>
